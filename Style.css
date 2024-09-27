@@ -1,0 +1,73 @@
+/* Color Palette */
+:root {
+    --dark-blue: #102540;
+    --light-blue: #173D5A;
+    --orange: #F57C00;
+    --white: #ffffff;
+    --light-gray: #dcdcdc;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+/* Header Styling */
+header {
+    background-color: var(--dark-blue);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px; /* Adjust the height if needed */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--orange);
+}
+
+nav ul li a.active {
+    color: var(--orange);
+}
+
+/* Thin line under header */
+.header-line {
+    border: none;
+    border-top: 1px solid var(--light-gray);
+    margin: 0;
+}
